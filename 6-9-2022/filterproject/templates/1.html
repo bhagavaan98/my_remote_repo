@@ -1,0 +1,39 @@
+<html>
+    <title>welcome to html</title>
+    <body bgcolor="green">
+        <center>
+        <marquee><h1>{{a|upper}} about {{b|upper}}</h1></marquee>
+        <hr>
+        <h2>{{items|lower}}</h2>
+        <h3>special item is {{ite|truncatechars:4}}</h3>
+        <h4>price is {{pr|capfirst}}</h4>
+        <h5>chocolates are available for {{choco|length}} rs</h5>
+        <b>send the reviews to {{rev}}</b>
+        <h6>{{li|slice:5}}</h6>
+        <h6>{{gr|truncatewords:5}}</h6>
+        <h5>{{a|slice:3}}</h5></center>
+{% if z %}
+<h1>hello {{z}}</h1>
+{% else %}
+<h1>problem solved</h1>
+{% endif %}
+{% if rev %}
+<h1>hi {{rev}} {{gr}}</h1>
+{% else %}
+<h1>there is no matter</h1>
+{% endif %}
+{% if rev|length <= 10 %}
+<h1>{{rev}}</h1>
+{% else %}
+<h1>there is no matter</h1>
+{% endif %}
+
+{% if nm == "django" %}
+<h1>hello {{nm}}</h1>
+{% else %}
+<h1>no course available</h1>
+{% endif %}
+
+        
+    </body>
+</html>
