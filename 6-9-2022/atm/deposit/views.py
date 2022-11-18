@@ -2,6 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def deposit1_details(request):
+    print("This is deposite function")
     location="hyderabad"
     name="sbi"
     type="cdm"
